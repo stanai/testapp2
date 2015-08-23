@@ -8,6 +8,27 @@
 
 import UIKit
 
+//ここから
+class HelloWorld: UIView {
+    
+    override func drawRect(rect: CGRect) {
+        
+        let attrs = [NSFontAttributeName: UIFont.systemFontOfSize(24)]
+        
+        //　表示する文字を入力する
+        
+        let str = "Hello, World!"
+        
+        let nsstr = str as NSString
+        
+        nsstr.drawAtPoint(CGPointMake(100, 100), withAttributes: attrs)
+        
+    }
+    
+}
+
+//ここまでを追加
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
